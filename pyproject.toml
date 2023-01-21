@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fastapi-boilerplate"
+version = "0.1.0"
+description = ""
+authors = ["Mário Victor Ribeiro Silva <mariovictorrs@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_boilerplate"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.89.1"
+pydantic = "^1.10.4"
+gunicorn = "^20.1.0"
+uvicorn = "^0.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+pylint = "^2.15.10"
+flake8 = "^6.0.0"
+mypy = "^0.991"
+vulture = "^2.7"
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
